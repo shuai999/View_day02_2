@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 这里的name最好就是自己自定义View的名字就可以-->
+    <declare-styleable name="TextView">
+        <!-- name是属性名称，format是格式
+
+             string 表示文字
+             color  表示文字颜色
+             dimension 表示宽高、字体大小
+             integer 表示数字，相当于int
+             reference  表示资源  (drawable)
+        -->
+
+        <attr name="jackchentext" format="string"/>
+        <attr name="jackchentextColor" format="color"/>
+        <attr name="jackchentextSize" format="dimension"/>
+        <attr name="jackchenmaxLength" format="integer"/>
+
+        <!-- 因为自定义View都是继承自View , 背景background都是View给我们管理的-->
+        <!--<attr name="jackchenbackground" format="reference|color"/>-->
+
+        <!-- 枚举 -->
+        <attr name="jackchenBnputType">
+            <enum name="number" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="password" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
